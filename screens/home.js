@@ -1,54 +1,6 @@
-// import React, { Component } from 'react'
-// import { Text, StyleSheet, View, Button } from 'react-native'
-// import {launchCamera, launchImageLibrary} from 'react-native-image-picker';
-
-// export default function Home() {
-//   {
-//     const options = {
-//         // mediaType: 'photo', 
-        
-//       };
-//     const onPickImageFromCamera = async() => {
-//         console.log('camera button is clicked');
-//         const result = await launchCamera(options, (response) => {
-//             // 'response' is the result of the user picking an image or cancelling the picker
-//             if (response.didCancel) {
-//               console.log('User cancelled image picker');
-//             } else if (response.error) {
-//               console.log('ImagePicker Error: ', response.error);
-//             } else {
-//               // You can now use the image data, e.g., display it in your app
-//               console.log('Image URI: ', response.uri);
-//               // Other response properties such as 'width', 'height', 'type', etc. are also available
-//             }
-//           });
-//     }
-
-//     const onPickImageFromGallery = () => {
-//         console.log('gallery button is clicked');
-//     }
-//     return (
-//       <View>
-//         <Text> Welcome to ocr app </Text>
-//         <Button
-//           title="Pick from gallery"
-//           onPress={onPickImageFromGallery}
-//         />
-//         <Button
-//           title="Open Camera"
-//           onPress={onPickImageFromCamera}
-//         />
-//       </View>
-//     )
-//   }
-// }
-
-// const styles = StyleSheet.create({})
-
 import React, { useState } from 'react';
 import { Button, Image, View, StyleSheet } from 'react-native';
 import {launchImageLibrary, launchCamera} from 'react-native-image-picker';
-// import * as ImagePicker from 'react-native-image-picker';
 
 
 const App = () => {
